@@ -14,10 +14,8 @@ print("Average Haircut Price: " + str(average_price))
 new_prices = [x - 5 for x in prices]
 print(new_prices)
 total_revenue = 0
-#The way they wanted it done to show I understand list comprehension and loops
 for i in range(len(hairstyles)):
   total_revenue += prices[i]*last_week[i]
-print(total_revenue)
-#the more simple way
+print("Total Revenue: " + str(total_revenue))
 money_made = sum(x * y for x, y in zip(prices, last_week))
 print(money_made)
