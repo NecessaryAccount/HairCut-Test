@@ -19,5 +19,7 @@ for i in range(len(hairstyles)):
 print("Total Revenue: " + str(total_revenue))
 average_daily_revenue = total_revenue / 7
 print("Average Daily Revenue: " + str(int(average_daily_revenue)))
+cuts_under_30 = [hairstyles[i] for i in range(len(new_prices)) if new_prices[i] < 30]
+print(cuts_under_30)
 money_made = sum(x * y for x, y in zip(prices, last_week))
 print(money_made)
